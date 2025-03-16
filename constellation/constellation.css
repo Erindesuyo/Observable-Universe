@@ -1,0 +1,274 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px;
+    margin: 0;
+    color: aliceblue;
+    text-shadow: 0 0 20px rgb(158, 158, 158);
+    overflow-x: hidden;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+
+    background-image: url(../image/star2.png);
+    background-size: cover;
+}
+
+
+
+.text-container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3; /* 별자리보다 더 위에 */
+}
+
+
+h1 {
+    margin-bottom: 0px;
+    font-family: 'Bungee Hairline', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    /* text-shadow: 0 0 10px black; 흰색으로 할지 검정으로 할지 고민 ㅜ*/
+}
+
+
+
+
+
+
+
+
+/* 별자리 !!!*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+ }
+  
+.constellations {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    height: 1200px;  
+    margin-top: 50px;
+}
+  
+  /* 별자리 이미지 */
+.constellation {
+    position: absolute;
+    width: 17%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* 모달 오버레이 (정보 박스) */
+.info-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; 
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+
+.info-box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    color: white;
+    text-shadow: none;
+  }
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+.info-name {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+  }
+  
+.info-text {
+    font-size: 1rem;
+  }
+  
+.constellation:hover {
+    transform: scale(1.2);
+  }
+  
+
+
+
+
+  
+/* 생일 입력 폼 스타일 (왜 위로 안올라가냐고 ㅠㅠㅠㅠㅠㅠ) */
+.zodiac-form {
+    position: absolute; 
+    top: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(158, 158, 158, 0.2);
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000; }
+
+
+.zodiac-form input,
+.zodiac-form button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.zodiac-form button {
+    cursor: pointer;
+    background-color: #444;
+    color: white;
+}
+
+.zodiac-form button:hover {
+    background-color: #666;
+}
+
+
+
+/* 결과 표시 스타일 */
+.zodiac-result {
+    position: absolute; /* 폼과 함께 위치 조정 */
+    top: 1100px; /* 폼 바로 아래로 이동 (필요 시 조정) */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+    z-index: 1000;
+}
+
+
+#zodiac-name {
+    font-size: 24px;
+}
+
+#zodiac-description {
+    font-size: 18px;
+}
+
+
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    text-align: center;
+
+    color: aliceblue;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    font-size: 14px;
+    text-shadow: none;
+    margin-top: 100px;
+}
+
+
+
+footer a {
+    color: #00bfff; /* NASA 링크를 강조 (하늘색) */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+
+/* navi */
+nav {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: fixed;
+    left: 50px; 
+    z-index: 1000;
+}
+
+.logo img{
+    width: 190px; 
+    height: auto; 
+    display: block;
+    margin-left: -30px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    display: flex;  
+    gap: 40px; 
+    width: auto;
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+}
+
+ /* .menu a {
+    border: 1px solid gray;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px; } */
+
+.icon:hover {
+    color: rgb(54, 57, 239);
+}

@@ -1,0 +1,228 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px;
+    margin: 0;
+    color: aliceblue;
+    text-shadow: 0 0 20px rgb(178, 178, 178);
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-image: url('../image/wide space2.png');
+    background-size: 150% auto;  
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+
+
+.text-container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3; /* 별자리보다 더 위에 */
+}
+
+
+h1 {
+    margin-bottom: 0px;
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 100px;
+    font-weight: lighter;
+    /* text-shadow: 0 0 10px black; 흰색으로 할지 검정으로 할지 고민 ㅜ*/
+}
+
+.text-container p{
+    margin-top: 50px;
+    line-height: 1.4;
+}
+
+
+
+/*텍스트 라인*/
+.content-wrapper {
+    width: 100%;
+
+    padding-top: 900px; 
+}
+.ques, .ans {
+    text-align: center;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+}
+.ques{
+    font-size: 30px;
+}
+.ans {
+    font-size: 100px;
+}
+
+.exoInfo h2 {
+    font-family: 'Orbitron', sans-serif; ;
+    font-size: 30px;
+}
+.list h2{
+    font-family: 'Orbitron', sans-serif; ;
+    font-weight: lighter;
+}
+.exoInfo p {
+    font-size: 20px;
+}
+
+.list {
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: -150px;
+}
+
+
+
+
+
+
+/*exoplanet*/
+ 
+.exoItem {
+    width: 80%;
+    margin: 50px auto;  
+    overflow: hidden;  
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px;
+}
+
+/* (1, 3, 5) left */
+.exoItem.odd .exoInfo {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.exoItem.odd .exoImg {
+    float: right;
+    width: 40%;
+}
+
+/* (2, 4, 6) rightt  */
+.exoItem.even .exoImg {
+    float: left;
+    width: 40%;
+}
+
+.exoItem.even .exoInfo {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+
+.exoImg img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.exoImg img:hover {
+    transform: scale(1.2); 
+}
+.exoInfo{
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navi */
+nav {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: fixed;
+    left: 50px; 
+    z-index: 1000;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    padding: 0 20px; 
+}
+
+.logo img{
+    width: 190px; 
+    height: auto; 
+    display: block;
+    margin-left: -30px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 40px; 
+    width: auto;
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+}
+
+ /* .menu a {
+    border: 1px solid gray;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px; } */
+
+.icon:hover {
+    color: rgb(54, 57, 239);
+}
+
+
+
+
+
+
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    text-align: center;
+
+    color: aliceblue;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    font-size: 14px;
+    text-shadow: none;
+    margin-top: 100px;
+}
+
+
+
+footer a {
+    color: #00bfff; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
